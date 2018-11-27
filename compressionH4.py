@@ -34,7 +34,7 @@ class Dct:
         self.noise = abs(self.signal-self.image)
         pnoise = np.mean(self.noise**2)
         psignal = np.mean(self.image**2)
-        return 20*math.log10(psignal/pnoise)
+        return 10*math.log10(psignal/pnoise)
 
 
 
